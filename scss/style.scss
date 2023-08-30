@@ -1348,3 +1348,58 @@ line-height: normal;
         padding: 150px 0;
     }
 }
+
+.email__message {
+    background-image: url('../images/Image\ \(1\).png');
+    padding: 110px 55px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+.container {
+}
+.subscribe {
+    max-width: 350px;
+}
+.subscribe__word {
+    color: #836363;
+font-family: Roboto;
+font-size: 50px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+.email__sending {
+    display: flex;
+    gap: 6px;
+}
+.your__adress {
+    height: 80px;
+    width: 350px;
+    border: 1px solid black;
+
+}
+.subscribe__button {
+    display: flex;
+    max-width: 220px;
+    padding: 28px 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+background: #274C5B;
+}
+.subscribe__textword {
+    color: #FFF;
+    font-family: 'Roboto' sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;}

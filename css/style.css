@@ -1253,6 +1253,7 @@ main {
   height: 580px;
   gap: 42px;
   height: auto;
+  padding: 180px 0;
 }
 
 @media (min-width: 768px) {
@@ -1334,5 +1335,112 @@ main {
   .organic__juicetable1,
   .organic__juicetable2 {
     padding: 150px 0;
+  }
+}
+
+
+
+
+.email__message {
+  background-image: url("../images/Image (1).png");
+  padding: 110px 55px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+}
+
+.subscribe {
+  max-width: 350px;
+}
+
+.subscribe__word {
+  color: #836363;
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.email__sending {
+  display: flex;
+  gap: 6px;
+}
+
+.your__adress {
+  height: 80px;
+  width: 350px;
+  border-radius: 16px;
+font-size: 35px ;
+padding-left: 20px;
+}
+
+.subscribe__button {
+  display: flex;
+  max-width: 220px;
+  padding: 28px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: #274C5B;
+}
+
+.subscribe__textword {
+  color: #FFF;
+  font-family: "Roboto" sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .email__message {
+      padding: 110px 40px;
+  }
+
+  .subscribe__word {
+      font-size: 40px;
+  }
+
+  .your__adress {
+      height: 50px;
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  .subscribe__button {
+      padding: 15px 30px;
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .email__message {
+      padding: 60px 20px;
+  }
+
+  .subscribe__word {
+      font-size: 28px;
+  }
+
+  .your__adress {
+      height: 40px;
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .subscribe__button {
+      padding: 12px 24px;
+      font-size: 12px;
   }
 }
