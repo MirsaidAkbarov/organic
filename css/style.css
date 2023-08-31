@@ -95,6 +95,7 @@ main {
 .container {
   margin: 0 auto;
   max-width: 1600px;
+  padding: 0 15px;
 }
 
 .organic__logo {
@@ -498,7 +499,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 28px 30px;
-  max-width: 16%;
+  max-width: 300px;
   border-radius: 16px;
   background: #EFD372;
   margin-top: 25px;
@@ -618,7 +619,8 @@ main {
 .farmers__working {
   width: 100%;
   display: flex;
-  margin-top: 200px;
+  margin: 200px 0;
+  align-items: center;
 }
 
 .fruits {
@@ -1137,11 +1139,11 @@ main {
 }
 
 .explore__button {
+  max-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 28px 30px;
-  max-width: 16%;
   border-radius: 16px;
   background: #EFD372;
   margin-top: 25px;
