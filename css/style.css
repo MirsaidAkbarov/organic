@@ -510,19 +510,27 @@ main {
   cursor: pointer;
 }
 
-.explore__button:hover {
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
-}
-
-.explore__button:focus {
+.explore__button1:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
   outline: none;
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
 }
 
-.explore__button:active {
-  transform: translateY(0);
+.explore__button1:active {
+  transform: translateY(2px);
+}
+
+.explore__button1 {
+  transition: transform 0.3s;
+}
+
+.explore__button1:active {
+  transform: scale(0.9);
+}
+
+.explore__button1:active {
+  transform: scale(0.9);
 }
 
 .explore__word1 {
@@ -533,6 +541,10 @@ main {
   font-weight: 700;
   line-height: normal;
   gap: 10px;
+}
+
+.narrow {
+  margin-left: 10px;
 }
 
 .fresh__fruit {
@@ -568,7 +580,7 @@ main {
   font-family: "Roboto";
   font-size: 40px;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 800;
   line-height: normal;
 }
 
@@ -582,6 +594,7 @@ main {
   width: 42%;
   background-repeat: no-repeat;
   border-radius: 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
   padding: 120px 0 120px 50px;
 }
 
@@ -595,6 +608,21 @@ main {
   height: 100%;
   border-radius: 50px;
   padding: 120px 0 120px 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.i0__percent:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  outline: none;
+}
+
+.get__garden:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  outline: none;
 }
 
 @media (max-width: 1000px) {
@@ -623,7 +651,6 @@ main {
 .farmers__working {
   width: 100%;
   display: flex;
-  margin: 200px 0;
   align-items: center;
 }
 
@@ -709,8 +736,6 @@ main {
   padding: 28px 30px;
   max-width: 16%;
   border-radius: 16px;
-  background: #EFD372;
-  margin-top: 25px;
   min-width: 200px;
   background: #274C5B;
   margin-top: 50px;
@@ -720,19 +745,26 @@ main {
 }
 
 .organic__button:hover {
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
-}
-
-.organic__button:focus {
+  transform: scale(1.05);
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
   outline: none;
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
 }
 
 .organic__button:active {
-  transform: translateY(0);
-  box-shadow: none;
+  transform: translateY(2px);
+}
+
+.organic__button {
+  transition: transform 0.3s;
+}
+
+.organic__button:active {
+  transform: scale(0.9);
+}
+
+.organic__button:active {
+  transform: scale(0.9);
 }
 
 .organic__textword {
@@ -742,7 +774,6 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -866,6 +897,15 @@ main {
   background: #F9F8F8;
   gap: 20px;
   padding: 30px;
+  padding: 120px 0 120px 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.typeof__products:hover {
+  transform: scale(1.05);
+  box-shadow: 7px 30px 30px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  outline: none;
 }
 
 .food__types {
@@ -1157,6 +1197,24 @@ main {
   cursor: pointer;
 }
 
+.explore__button:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  outline: none;
+}
+
+.explore__button:focus {
+  outline: none;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.explore__button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
 .explore__word {
   color: #274C5B;
   font-family: "Roboto", sans-serif;
@@ -1307,6 +1365,17 @@ main {
   background-image: url("../images/Photo (8).jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 120px 0 120px 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.organic__juicetable:hover,
+.organic__juicetable1:hover,
+.organic__juicetable2:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  outline: none;
 }
 
 .organic__juicetable1 {
@@ -1319,9 +1388,13 @@ main {
   background-image: url("../images/Photo (9).jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 120px 0 120px 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .organic__juicetable2 {
+  padding: 120px 0 120px 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
   width: 100%;
   height: 100%;
   padding: 250px 0;
@@ -1406,7 +1479,18 @@ main {
 .your__adress {
   height: 80px;
   width: 350px;
-  border: 1px solid black;
+  border-radius: 16px;
+  padding-left: 20px;
+  font-size: 30px;
+  font-family: "Roboto";
+}
+
+.your__adress {
+  transition: transform 0.3s;
+}
+
+.your__adress:active {
+  transform: scale(0.98);
 }
 
 .subscribe__button {
@@ -1418,6 +1502,27 @@ main {
   gap: 10px;
   border-radius: 16px;
   background: #274C5B;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.subscribe__button:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  outline: none;
+}
+
+.subscribe__button:focus {
+  outline: none;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.subscribe__button:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 .subscribe__textword {
@@ -1482,8 +1587,10 @@ main {
 }
 
 .morenews__button:hover {
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
+  transform: scale(1.05);
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  outline: none;
 }
 
 .morenews__button:focus {
@@ -1499,7 +1606,7 @@ main {
 
 .morenews__textword {
   color: #274C5B;
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto";
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
