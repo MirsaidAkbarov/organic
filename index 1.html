@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="organic__header container">
+          <div class="logo__section">
+            <img src="./images/Logo.svg" alt="" class="org" />
+            <p class="organic__logo">Organick</p>
+          </div>
+          <div class="home__section">
+            <p class="Home" onclick="window.location.href = 'index.html';">Home</p>
+            <p class="Home">About</p>
+            <p class="Home">Pages</p>
+            <p class="Home">Shop</p>
+            <p class="Home">Projects</p>
+            <p class="Home">News</p>
+          </div>
+          <div class="search__section">
+            <div class="search__button">
+              <input class="type" type="text" />
+              <img src="./images/Search Icon.svg" alt="" class="search" />
+            </div>
+            <div class="payment__button">
+              <img src="./images/Cart Icon.svg" alt="" class="card__button" />
+              <p class="cart">Cart (0)</p>
+            </div>
+          </div>
+          <div class="menu__section" id="mobileMenuToggle">
+            <img src="./images/icons8-меню.svg" alt="" class="menu" />
+          </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <p class="Home">Home</p>
+          <p class="Home">About</p>
+          <p class="Home">Pages</p>
+          <p class="Home">Shop</p>
+          <p class="Home">Projects</p>
+          <p class="Home">News</p>
+        </div>
+      </header>
+
+      <div class="main">
+
+
+
+      <div class="email__message container">
+        <div class="subscribe">
+          <p class="subscribe__word">Subscribe to
+            our Newsletter
+            </p>
+        </div>
+        <div class="email__sending">
+          <input type="text" class="your__adress">
+          <div class="subscribe__button">
+            <p class="subscribe__textword">Subscribe</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      </div>
+
+      <div class="footer">
+        <div class="contacts1 container">
+          <div class="contacts container">
+            <div class="contact__us">
+              <p class="contact__main">Contact Us</p>
+              <div class="email">
+                <p class="email__all">Email</p>
+                <p class="phone">needhelp@Organia.com</p>
+              </div>
+              <div class="phone1">
+                <p class="email__all">Phone</p>
+                <p class="phone">666 888 888</p>
+              </div>
+              <div class="adress">
+                <p class="email__all">Adress</p>
+                <p class="phone">88 road, borklyn streets</p>
+              </div>
+            </div>
+            <div class="contact__media">
+              <div class="combine__logo">
+                <div class="logo__section">
+                  <img src="./images/Logo.svg" alt="" class="org" />
+                  <p class="organic__logo">Organick</p>
+                </div>
+                <p class="about">
+                  Simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum simply dummy text of the printing
+                </p>
+              </div>
+              <div class="social__media">
+                <img src="./images/1.svg" alt="" class="social" />
+                <img src="./images/2.svg" alt="" class="social" />
+                <img src="./images/3.svg" alt="" class="social" />
+                <img src="./images/4.svg" alt="" class="social" />
+              </div>
+            </div>
+            <div class="utility__pages">
+              <p class="contact__main1">Unity Pages</p>
+              <p class="unity__words">Style Guide</p>
+              <p class="unity__words">404 Not Found</p>
+              <p class="unity__words">Password Protected</p>
+              <p class="unity__words">Licences</p>
+              <p class="unity__words">Changelog</p>
+            </div>
+          </div>
+  
+          <div class="contact__media1">
+            <div class="combine__logo">
+              <div class="logo__section">
+                <img src="./images/Logo.svg" alt="" class="org" />
+                <p class="organic__logo">Organick</p>
+              </div>
+              <p class="about">
+                Simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum simply dummy text of the printing
+              </p>
+            </div>
+            <div class="social__media">
+              <img src="./images/1.svg" alt="" class="social" />
+              <img src="./images/2.svg" alt="" class="social" />
+              <img src="./images/3.svg" alt="" class="social" />
+              <img src="./images/4.svg" alt="" class="social" />
+            </div>
+          </div>
+          <div class="copyright">
+            <p class="copy">
+              Copyright © <span class="organic">Organick</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  <script src="scrip.js">
+    const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    mobileMenuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("active");
+    });
+  </script>
+</html>

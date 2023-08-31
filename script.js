@@ -81,21 +81,29 @@
 // }
 
 
-function isPrime(number) {
-if (number > 1) {
-    for(let i = 2; i < number; i++) {
-        if (number % i == 0) {
-            isPrime = false;
-        }
-    }
-    if (isPrime) {
-        console.log(`${number} prime `);
-    } else {
-        console.log(`${number}  not prime `);
-    }
-}
-return number;
+// function isPrime(number) {
+// if (number > 1) {
+//     for(let i = 2; i < number; i++) {
+//         if (number % i == 0) {
+//             isPrime = false;
+//         }
+//     }
+//     if (isPrime) {
+//         console.log(`${number} prime `);
+//     } else {
+//         console.log(`${number}  not prime `);
+//     }
+// }
+// return number;
 
-}
- isPrime(4)
+// }
+//  isPrime(4)
 
+
+
+const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    mobileMenuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("active");
+    });

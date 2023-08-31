@@ -2,7 +2,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Yellowtail&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Yellowtail&display=swap');
 .wrapper {
     width: 100%;
     height: 100%;
@@ -41,9 +41,25 @@ main {
     width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 69px 20px;
+        padding: 69px 0px;
 
 }
+
+  
+//   .Home {
+//     transition: box-shadow 0.3s, transform 0.3s;
+//   }
+  
+//   .Home:hover {
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+//     transform: translateY(-1px);
+//   }
+  
+//   .Home:focus {
+//     outline: none;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+//   }
+  
 
 .logo__section {
     // width: 100%;
@@ -58,14 +74,28 @@ main {
     gap: 30px;
     // width: 100%;
     margin-left: 30px;
+    // box-sizing: ;
+    box-sizing: content-box;
+    padding-left: 20px ;
 }
 
+
 .Home {
+    box-sizing: border-box;
     color: #274C5B;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 700;
+    box-sizing: content-box;
+    padding-left: 30px ;
     transition: color 0.3s ease; /* Adding transition for color property */
+}
+
+
+@media (max-width: 1200px) {
+    .Home {
+        padding-left: 0;
+    }
 }
 
 .Home:hover {
@@ -430,7 +460,7 @@ line-height: 165.4%;
     line-height: normal;
 }
 
-.explore__button {
+.explore__button1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -458,10 +488,9 @@ line-height: 165.4%;
 
 .explore__button:active {
     transform: translateY(0);
-    box-shadow: none;
 }
 
-.explore__word {
+.explore__word1 {
 
     color: #274C5B;
     font-family: 'Roboto', sans-serif;
@@ -469,7 +498,6 @@ line-height: 165.4%;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-display: flex;
 gap: 10px;
 }
 .narrow {
@@ -477,10 +505,9 @@ gap: 10px;
 
 
 
-
 .fresh__fruit {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     gap: 60px;
@@ -488,19 +515,7 @@ gap: 10px;
 }
 .container {
 }
-.get__garden {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;    
-    background-image: url("../images/Photo\ \(6\).jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 42%;
-    background-repeat: no-repeat;
-    border-radius: 50px;
- 
-      padding: 120px 50px;
-}
+
 .natural {
     display: flex;
     flex-direction: column;
@@ -527,11 +542,25 @@ font-style: normal;
 font-weight: 100;
 line-height: normal;
 }
+.get__garden {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;    
+    background-image: url("../images/Photo\ \(6\).jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 42%;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+ 
+      padding:120px 0 120px 50px;
+}
+
 .i0__percent {
     display: flex;
     align-items: center;
     background-image: url("../images/Photo\ \(5\).jpg");
-    background-size: 100%;
+    background-size: 100% 100%;
     width: 42%;
     background-repeat: no-repeat;
 
@@ -542,6 +571,19 @@ line-height: normal;
 
 
 }
+
+@media (max-width: 1000px) {
+    .fresh__fruit {
+        display: flex;
+        flex-direction: column;
+    }
+    .get__garden,
+    .i0__percent {
+        width: 80%;
+    }
+}
+
+
 .get__offer {
 }
 .vegatebles__word {
@@ -555,30 +597,30 @@ line-height: normal;
 
 
 
-@media (max-width: 768px) {
-    .fresh__fruit {
-        flex-direction: column;
-        gap: 20px;
-    }
+// @media (max-width: 768px) {
+//     .fresh__fruit {
+//         flex-direction: column;
+//         gap: 20px;
+//     }
 
-    .container {
-        padding: 20px;
-    }
+//     .container {
+//         padding: 20px;
+//     }
 
-    .get__garden,
-    .i0__percent {
-        width: 100%;
-        padding: 50px;
-    }
+//     .get__garden,
+//     .i0__percent {
+//         width: 100%;
+//         padding: 50px;
+//     }
 
-    .natural,
-    .offer,
-    .garden__word,
-    .vegatebles__word {
-        font-size: 24px;
-        line-height: 1.2;
-    }
-}
+//     .natural,
+//     .offer,
+//     .garden__word,
+//     .vegatebles__word {
+//         font-size: 24px;
+//         line-height: 1.2;
+//     }
+// }
 
 
 

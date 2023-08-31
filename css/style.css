@@ -1,6 +1,7 @@
 /* "*" belgisi barcha elementlarga murojaatni anglatadi*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Yellowtail&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -109,7 +110,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 69px 20px;
+  padding: 69px 0px;
 }
 
 .logo__section {
@@ -123,16 +124,26 @@ main {
   justify-content: center;
   gap: 30px;
   margin-left: 30px;
+  box-sizing: content-box;
+  padding-left: 20px;
 }
 
 .Home {
+  box-sizing: border-box;
   color: #274C5B;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 700;
+  box-sizing: content-box;
+  padding-left: 30px;
   transition: color 0.3s ease; /* Adding transition for color property */
 }
 
+@media (max-width: 1200px) {
+  .Home {
+    padding-left: 0;
+  }
+}
 .Home:hover {
   color: #FF5733; /* New color when hovering over the element */
 }
@@ -482,7 +493,7 @@ main {
   line-height: normal;
 }
 
-.explore__button {
+.explore__button1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -510,40 +521,25 @@ main {
 
 .explore__button:active {
   transform: translateY(0);
-  box-shadow: none;
 }
 
-.explore__word {
+.explore__word1 {
   color: #274C5B;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  display: flex;
   gap: 10px;
 }
 
 .fresh__fruit {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   gap: 60px;
   margin-top: 100px;
-}
-
-.get__garden {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  background-image: url("../images/Photo (6).jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 42%;
-  background-repeat: no-repeat;
-  border-radius: 50px;
-  padding: 120px 50px;
 }
 
 .natural {
@@ -575,11 +571,24 @@ main {
   line-height: normal;
 }
 
+.get__garden {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-image: url("../images/Photo (6).jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 42%;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  padding: 120px 0 120px 50px;
+}
+
 .i0__percent {
   display: flex;
   align-items: center;
   background-image: url("../images/Photo (5).jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
   width: 42%;
   background-repeat: no-repeat;
   height: 100%;
@@ -587,6 +596,16 @@ main {
   padding: 120px 0 120px 50px;
 }
 
+@media (max-width: 1000px) {
+  .fresh__fruit {
+    display: flex;
+    flex-direction: column;
+  }
+  .get__garden,
+  .i0__percent {
+    width: 80%;
+  }
+}
 .vegatebles__word {
   color: #274C5B;
   font-family: Roboto;
@@ -596,27 +615,6 @@ main {
   line-height: normal;
 }
 
-@media (max-width: 768px) {
-  .fresh__fruit {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .container {
-    padding: 20px;
-  }
-  .get__garden,
-  .i0__percent {
-    width: 100%;
-    padding: 50px;
-  }
-  .natural,
-  .offer,
-  .garden__word,
-  .vegatebles__word {
-    font-size: 24px;
-    line-height: 1.2;
-  }
-}
 .farmers__working {
   width: 100%;
   display: flex;
