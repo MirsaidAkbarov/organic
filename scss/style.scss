@@ -493,6 +493,8 @@ gap: 10px;
     flex-direction: column;
     justify-content: left;    
     background-image: url("../images/Photo\ \(6\).jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 42%;
     background-repeat: no-repeat;
     border-radius: 50px;
@@ -529,7 +531,10 @@ line-height: normal;
     display: flex;
     align-items: center;
     background-image: url("../images/Photo\ \(5\).jpg");
+    background-size: 100%;
     width: 42%;
+    background-repeat: no-repeat;
+
     height: 100%;
     border-radius: 50px;
 
@@ -1455,6 +1460,8 @@ line-height: normal;
     border-radius: 16px;
     border: 2px solid #274C5B;
     background: #FFF;
+    max-height: 100px;
+    
     margin-top: 50px;
 box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 transition: box-shadow 0.3s, transform 0.3s;
@@ -1595,7 +1602,7 @@ line-height: 165.4%; /* 29.772px */
 
 @media (min-width: 577px) and (max-width: 767px) {
     .news__chat {
-      gap: 30px; 
+      gap: 100px; 
     }
   
     .chat__box,
@@ -1628,4 +1635,11 @@ line-height: 165.4%; /* 29.772px */
       gap: 50px;
     }
   
+}
+
+
+@media (max-width: 768px) {
+.freandly__iconis {
+    padding-left: 500px;
+}
 }
