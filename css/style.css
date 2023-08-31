@@ -181,6 +181,7 @@ main {
   border: 1px solid #E0E0E0;
   padding: 0 24px 0 5px;
   border-radius: 50px;
+  min-width: 75px;
   align-items: center;
 }
 
@@ -191,13 +192,12 @@ main {
 .cart {
   color: #274C5B;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   margin-left: 12px;
   width: 100%;
-  min-width: 55%;
   margin-right: 5px;
 }
 
@@ -453,6 +453,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 50px 0 100px 0;
 }
 
 .explore__then {
@@ -539,7 +540,6 @@ main {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  gap: 60px;
   margin-top: 100px;
 }
 
@@ -601,10 +601,14 @@ main {
   .fresh__fruit {
     display: flex;
     flex-direction: column;
+    gap: 60px;
   }
   .get__garden,
   .i0__percent {
     width: 80%;
+  }
+  .explore__main {
+    padding: 0;
   }
 }
 .vegatebles__word {
